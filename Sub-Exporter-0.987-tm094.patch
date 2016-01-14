@@ -1,0 +1,16 @@
+--- t/00-compile.t
++++ t/00-compile.t
+@@ -3,7 +3,7 @@ use warnings;
+ 
+ # this test was generated with Dist::Zilla::Plugin::Test::Compile 2.037
+ 
+-use Test::More 0.94 tests => 2;
++use Test::More 0.47 tests => 2;
+ 
+ 
+ 
+@@ -46,4 +46,3 @@ for my $lib (@module_files)
+ 
+ # no warning checks;
+ 
+-BAIL_OUT("Compilation problems") if !Test::More->builder->is_passing;
